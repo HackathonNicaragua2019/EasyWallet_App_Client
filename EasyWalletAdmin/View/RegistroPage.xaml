@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="EasyWalletAdmin.View.RegistroPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid Margin="20">
+                <Grid.RowDefinitions Height="auto"></Grid.RowDefinitions>
+                <Frame CornerRadius="40" Grid.Row="0">
+                  
+                        <Entry Placeholder="Nombre"></Entry>
+                        
+                     
+                </Frame>
+                <Frame CornerRadius="40" Grid.Row="1">
+
+                    <Entry Placeholder="Correo"></Entry>
+
+
+                </Frame>
+                <Frame CornerRadius="40" Grid.Row="2">
+
+                    <Entry Placeholder="Contraseña"></Entry>
+
+
+                </Frame>
+                <Frame CornerRadius="40" Grid.Row="3">
+
+                    <Entry Placeholder="Confirmar Contraseña"></Entry>
+
+
+                </Frame>
+            </Grid>
+            <Button Text="Registrarse" 
+                    TextColor="White"
+                    CornerRadius="40" 
+                    Margin="10"
+                    BackgroundColor="#1F3A7A"
+                    Clicked="go_home"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

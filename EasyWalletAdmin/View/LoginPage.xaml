@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="EasyWalletAdmin.View.LoginPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="Elec"></Image>
+            <Frame CornerRadius="20">
+                <Entry Placeholder="Email" Keyboard="Email"></Entry>
+            </Frame>
+            <Frame CornerRadius="20">
+                <Entry Placeholder="Password" IsPassword="True"></Entry>
+            </Frame>
+            <Grid>
+                <Grid.RowDefinitions height="auto"></Grid.RowDefinitions>
+                <Label  Text="Recordar"
+                        TextColor="#1F3A7A"
+                        Grid.Row="0"
+                        Grid.Column="1"></Label>
+                <Switch IsEnabled="True"
+                        OnColor="#1F3A7A"
+                          Grid.Row="0"
+                        Grid.Column="1"></Switch>
+            </Grid>
+            <Button CornerRadius="40" Text="Ingresar"  
+                    TextColor="White" 
+                    BackgroundColor="#1F3A7A"
+                    Margin="20"
+                    Clicked="go_home"></Button>
+          
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

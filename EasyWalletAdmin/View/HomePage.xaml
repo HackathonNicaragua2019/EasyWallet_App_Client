@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:XamarinMicroCharts"
+             xmlns:forms="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             mc:Ignorable="d"
+             x:Class="EasyWalletAdmin.View.HomePage"
+             BackgroundColor="#F4FFF6"
+             Title="Home"
+             >
+    
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="#FDFFFE">
+          
+            <Grid>
+                <Grid.RowDefinitions Height="auto"></Grid.RowDefinitions>
+
+
+                    <ImageButton
+                     Source="hhh"
+                        BackgroundColor="Transparent"
+                 Margin="10"
+                 WidthRequest      ="80"
+                 HeightRequest     ="80"
+                 CornerRadius      ="40"
+                 VerticalOptions   ="Center"
+                 HorizontalOptions ="Center"
+              
+                 Grid.Row="0"
+                 Grid.Column="0"/>
+                    <ImageButton
+                        Source="invv"
+                 WidthRequest      ="80"
+                 HeightRequest     ="80"
+                 CornerRadius      ="40"
+                 VerticalOptions   ="Center"
+                 HorizontalOptions ="Center"
+             BackgroundColor="Transparent"
+                    
+                 Clicked="GoInv_Clicked"
+                 Grid.Row="0"
+                 Grid.Column="1"/>
+                    <ImageButton
+                        Source="car"
+                            BackgroundColor="Transparent"
+                 WidthRequest      ="80"
+                 HeightRequest     ="80"
+                 CornerRadius      ="40"
+                 VerticalOptions   ="Center"
+                 HorizontalOptions ="Center"
+               
+                 Clicked="GoPe_Clicked"
+                 Grid.Row="0"
+                  Grid.Column="2"/>
+
+                <Label Text="Resumen" Grid.Row="1" FontSize="25" HorizontalOptions="CenterAndExpand" ></Label>
+
+
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions Height="auto"></Grid.RowDefinitions>
+            
+                <forms:ChartView x:Name="linesChart" HeightRequest="200" WidthRequest="100" Grid.Row="0"/>
+                
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions Height="auto" ></Grid.RowDefinitions>
+                <Frame CornerRadius="30" BorderColor="Gray"
+                       Grid.Row="0"
+                       Grid.Column="0">
+                    <StackLayout>
+                        <Label Text="Producto Mas Vendido" TextColor="Gray"></Label>
+                        <Label Text="Samsung S9" TextColor="Blue"></Label>
+                    </StackLayout>
+           
+                </Frame>
+                <Frame CornerRadius="30" BorderColor="Gray"
+                        Grid.Row="0"
+                        Grid.Column="1">
+                    <StackLayout>
+                        <Label Text="Total Pedidos" TextColor="Gray"></Label>
+                        <Label Text="120" TextColor="Blue"></Label>
+                    </StackLayout>
+                 
+                </Frame>
+                <Frame CornerRadius="30" BorderColor="Gray"
+                        Grid.Row="0"
+                       Grid.Column="2">
+                    <StackLayout>
+                        <Label Text="Total Ganancias" TextColor="Gray"></Label>
+                        <Label Text="C$ 1,300.00" TextColor="Blue"></Label>
+                    </StackLayout>
+              
+                </Frame>
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions Height="0"></Grid.RowDefinitions>
+                <Label Text="Productos Mas Vendidos" Grid.Row="0" FontSize="25" HorizontalOptions="CenterAndExpand" ></Label>
+                    <forms:ChartView x:Name="donutChart" HeightRequest="200" WidthRequest="100"/>
+            </Grid>
+
+          
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
