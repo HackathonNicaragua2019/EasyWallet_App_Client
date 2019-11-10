@@ -5,13 +5,19 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="EasyWalletAdmin.View.InicioPage"
-
-             Title="Bienvenido"
+              NavigationPage.HasNavigationBar="false"
+           
            >
      
     <ContentPage.Content>
         <StackLayout>
-          
+            <Label Text="Bienvenido"
+                   TextColor="#1F3A7A"
+                   FontSize="40"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center">
+                
+            </Label>
             <Image Source="log" Margin="20"></Image>
             <Button Text="Ingrese"  
                     TextColor="White"  
@@ -19,7 +25,11 @@
                     Margin="10" 
                     BackgroundColor="#1F3A7A"
                     Clicked="go_login"></Button>
-            <Label Text="-0-"  TextColor="#1F3A7A"></Label>
+            <Label Text="-0-"  
+                   
+                   TextColor="#1F3A7A"
+                   HorizontalOptions="Center"
+                   ></Label>
             <Button Text="Registro"  
                     TextColor="white" 
                     CornerRadius ="40" 

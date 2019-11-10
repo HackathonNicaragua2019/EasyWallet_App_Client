@@ -16,6 +16,8 @@ using SkiaSharp;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Microcharts.Forms;
+
 namespace EasyWalletAdmin.View
 {
 
@@ -50,7 +52,7 @@ namespace EasyWalletAdmin.View
             };
 
 
-
+            
 
         }
         async void GoInv_Clicked(object sender, EventArgs e) => await Navigation.PushAsync(new InventarioPage());

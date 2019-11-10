@@ -15,7 +15,7 @@
         <ScrollView>
             <StackLayout BackgroundColor="#FDFFFE">
           
-            <Grid>
+               <Grid>
                 <Grid.RowDefinitions Height="auto"></Grid.RowDefinitions>
 
 
@@ -33,16 +33,16 @@
                  Grid.Column="0"/>
                     <ImageButton
                         Source="invv"
-                 WidthRequest      ="80"
-                 HeightRequest     ="80"
-                 CornerRadius      ="40"
-                 VerticalOptions   ="Center"
-                 HorizontalOptions ="Center"
-             BackgroundColor="Transparent"
+                        WidthRequest      ="80"
+                        HeightRequest     ="80"
+                        CornerRadius      ="40"
+                        VerticalOptions   ="Center"
+                        HorizontalOptions ="Center"
+                        BackgroundColor="Transparent"
                     
-                 Clicked="GoInv_Clicked"
-                 Grid.Row="0"
-                 Grid.Column="1"/>
+                       Clicked="GoInv_Clicked"
+                       Grid.Row="0"
+                        Grid.Column="1"/>
                     <ImageButton
                         Source="car"
                             BackgroundColor="Transparent"
@@ -99,11 +99,11 @@
             <Grid>
                 <Grid.RowDefinitions Height="0"></Grid.RowDefinitions>
                 <Label Text="Productos Mas Vendidos" Grid.Row="0" FontSize="25" HorizontalOptions="CenterAndExpand" ></Label>
-                    <forms:ChartView x:Name="donutChart" HeightRequest="200" WidthRequest="100"/>
+                
             </Grid>
 
           
         </StackLayout>
-        </ScrollView>
+      </ScrollView>
     </ContentPage.Content>
 </ContentPage>

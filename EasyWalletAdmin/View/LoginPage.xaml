@@ -4,15 +4,20 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="EasyWalletAdmin.View.LoginPage">
+             x:Class="EasyWalletAdmin.View.LoginPage"
+              NavigationPage.HasNavigationBar="false">
     <ContentPage.Content>
         <StackLayout>
             <Image Source="Elec"></Image>
             <Frame CornerRadius="20">
-                <Entry Placeholder="Email" Keyboard="Email"></Entry>
+                <Entry Placeholder="Email" 
+                       Keyboard="Email"
+                       x:Name="Email"></Entry>
             </Frame>
             <Frame CornerRadius="20">
-                <Entry Placeholder="Password" IsPassword="True"></Entry>
+                <Entry Placeholder="Password" 
+                       IsPassword="True"
+                       x:Name="Password"></Entry>
             </Frame>
             <Grid>
                 <Grid.RowDefinitions height="auto"></Grid.RowDefinitions>
@@ -29,7 +34,10 @@
                     TextColor="White" 
                     BackgroundColor="#1F3A7A"
                     Margin="20"
-                    Clicked="go_home"></Button>
+                    Clicked="go_home"
+                    >
+                
+            </Button>
           
         </StackLayout>
     </ContentPage.Content>
