@@ -14,11 +14,12 @@
             <Label Text="Bienvenido"
                    TextColor="#1F3A7A"
                    FontSize="40"
+                   Margin="20"
                    FontAttributes="Bold"
                    HorizontalOptions="Center">
                 
             </Label>
-            <Image Source="log" Margin="20"></Image>
+            <Image Source="log" Margin="40"></Image>
             <Button Text="Ingrese"  
                     TextColor="White"  
                     CornerRadius ="40" 

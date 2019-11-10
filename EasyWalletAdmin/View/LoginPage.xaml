@@ -8,13 +8,15 @@
               NavigationPage.HasNavigationBar="false">
     <ContentPage.Content>
         <StackLayout>
-            <Image Source="Elec"></Image>
-            <Frame CornerRadius="20">
+            <StackLayout Margin="20"></StackLayout>
+            <Image Source="Elec" Margin="20"></Image>
+            <StackLayout Margin="20"></StackLayout>
+            <Frame CornerRadius="20" >
                 <Entry Placeholder="Email" 
                        Keyboard="Email"
                        x:Name="Email"></Entry>
             </Frame>
-            <Frame CornerRadius="20">
+            <Frame CornerRadius="20" >
                 <Entry Placeholder="Password" 
                        IsPassword="True"
                        x:Name="Password"></Entry>
